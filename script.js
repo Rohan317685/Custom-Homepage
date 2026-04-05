@@ -100,13 +100,13 @@ window.onload = function () {
                 setInterval(() => getWeather(lat, lon), 900000);
             },
             (error) => {
-                console.log("location acces rejected, default is antartica");
-                getWeather(-78.46, 106.83);
+                console.log("location acces rejected, default is boston");
+                getWeather(42.36, -71.06);
             }
         );
     } else {
         console.log("Browser does not support Geolocation.");
-        getWeather(-78.46, 106.83);
+        getWeather(42.36, -71.06);
     }
 };
 
